@@ -3,10 +3,28 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
 }
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+}
+
+.home-page{
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #09203F, #537895
+    );
+    color: #fafafa;
+    font-size: 100%;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
 
 body{
     height: 100%;
-    background-image: linear-gradient(to bottom right, #2e3192, #1bffff
+    background-image: linear-gradient(to bottom right, #09203F, #537895
     );
     color: #fafafa;
     font-size: 100%;
@@ -14,12 +32,15 @@ body{
     text-rendering: optimizeSpeed;
     margin: 20px 20px 20px 20px;
 }
+
 p{
     margin-bottom: 20px;
     font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 figcaption{
     margin-bottom: 20px;
+    font-size: 15px;
+    text-align: center;
 }
 .offpage{
 	position: absolute;
@@ -48,6 +69,8 @@ h1{
 h2{
     padding-top: 45px;
     padding-bottom: 30px;
+    text-align: center;
+    
 }
 h3{
     padding-top: 15px;
@@ -62,7 +85,7 @@ img{
     margin-right: auto;
     border-width: 5px;
     border-style: solid;
-    border-color: #000000;
+    border-color: lightcoral;
 }
 video{
     width: 150px;
@@ -71,7 +94,7 @@ video{
     margin-right: auto;
     border-width: 5px;
     border-style: solid;
-    border-color: #000000;
+    border-color: lightcoral;
 }
 
 nav ul {
@@ -82,14 +105,14 @@ nav ul {
     padding: 0px;
     list-style: none;
   }
-  nav ul a {
+nav ul a {
     display: inline-grid;
     padding: 5px;
     color: white;
     font-size: 15px;
     text-decoration: none;
   }
-  nav ul a::before {
+nav ul a::before {
     width: 100%;
     height: 0.33em;
     background-color: white;
