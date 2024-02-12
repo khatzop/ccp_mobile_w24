@@ -14,12 +14,11 @@
 
 .home-page{
     height: 100%;
-    background-image: linear-gradient(to bottom right, #09203F, #537895
-    );
     color: #fafafa;
     font-size: 100%;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+    
 }
 
 body{
